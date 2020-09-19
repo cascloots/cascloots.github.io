@@ -1,0 +1,91 @@
+body {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin: 0;
+  /* cursor: none; */
+  background: white;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 4rem;
+  font-weight: normal;
+  /* line-height: 150%; */
+}
+
+a {
+  color: currentColor;
+}
+
+img {
+  position: relative;
+  z-index: -3;
+}
+
+.logo {
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.navigation {
+  list-style: none;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-size: 1.8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 138rem;
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+.navigationItem a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.cursor {
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  z-index: 1000;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.cursor-wrapper {
+  mix-blend-mode: difference;
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  width: 90px;
+  height: 90px;
+  transition-timing-function: ease-out;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
