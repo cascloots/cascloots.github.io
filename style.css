@@ -8,17 +8,31 @@ body {
   user-select: none;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+  padding-top: 30px;
+  padding-bottom: 120px;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 150%;
 }
 
-span {
+h2 {
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.title {
   font-size: 18px;
   font-weight: normal;
+  margin-top: 60px;
 }
 
 a {
@@ -26,7 +40,7 @@ a {
 }
 
 b {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .logo {
@@ -39,7 +53,6 @@ b {
 .navigation {
   list-style: none;
   padding-top: 90px;
-  padding-bottom: 60px;
   font-size: 18px;
   padding-left: 50px;
   padding-right: 50px;
@@ -48,12 +61,13 @@ b {
 }
 
 .content {
-  max-width: 1380px;
+  max-width: 1280px;
 }
 
 .contentCase {
-  max-width: 1380px;
+  max-width: 1280px;
   display: flex;
+  padding-bottom: 120px;
 }
 
 .caseRoles {
@@ -116,13 +130,14 @@ b {
 .hero {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 120px;
 }
 
 .case {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 }
 
 .white {
@@ -138,6 +153,10 @@ b {
 footer {
   background-color: black;
   color: white;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
 }
 
 .carouselContainer {

@@ -21,4 +21,3 @@ navLinks.forEach(link =>{
     document.getElementById("cursor").innerHTML = " ";
   });
 })
-

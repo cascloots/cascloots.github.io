@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
-  <body>
+  <body onload="myFunction(this)">
     <div class="cursor-wrapper">
     <div class="cursor"><p class="wrapper" id="cursor">READ</p></div>
     </div>
@@ -34,7 +34,7 @@
     </nav>
     <section class="hero" onmouseenter="read(this)">
       <div class="content">
-        <span>Hi, there</span>
+        <div class="title">Hi, there</div>
         <h1>Cas Cloots is a designer working across digital and graphic design with a passion for photography and motion<br/>
   Available for freelance ⟶ cloots.cas@gmail.com </h1>
       </div>
@@ -42,7 +42,7 @@
     <div onmouseenter="drag(this)">
     <section class="case dark">
       <div class="content">
-        <span>↓ App Redesign ↓</span>
+        <div class="title">↓ App Redesign ↓</div>
         <h2><b>MightyHive</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
         <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
         </div>
@@ -74,13 +74,13 @@
     <div onmouseenter="drag(this)">
       <section class="case white">
         <div class="content">
-          <span>↓ App Redesign ↓</span>
+          <div class="title">↓ App Redesign ↓</div>
           <h2><b>MightyHive</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
           <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
           </div>
         </section>
           <section class="carouselContainer white">
-          <div class="carousel" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+          <div class="carousel" data-flickity='{ "value":true, "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
             <div class="carousel-cell test"></div>
             <div class="carousel-cell test2"></div>
             <div class="carousel-cell test3"></div>
@@ -153,6 +153,13 @@
     function footer(x) {
       document.getElementById("cursor").innerHTML = "CLICK";
     }
+
+    function myFunction(x) {
+      $carousel.flickity( 'selectCell', "3" );
+    }
+    var $carousel = $('.carousel').flickity({
+      groupCells: true
+    });
     </script>
     
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
