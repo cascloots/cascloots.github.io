@@ -1,1 +1,109 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hi, There</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+  <body>
+    <div class="cursor-wrapper">
+    <div class="cursor"><p class="wrapper"></p></div>
+    </div>
+    <nav>
+      <div class="content">
+      <ul class="navigation">
+        <li>
+        <Link to="/"><div class="logo"></div></Link>
+        </li>
+        <li class="navigationItem">
+          <a href="">Home</a>
+        </li>
+        <li class="navigationItem">
+          <a href="https://drive.google.com/file/d/1dJrovyI_vcd4Ve8-RSLey7G_NT1pwxpb/view?usp=sharing">Resume</a>
+        </li>
+        <li class="navigationItem">
+          <a href="">About</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="content">
+        <span>Hi, there</span>
+        <h1>Cas Cloots is a designer working across digital and graphic design with a passion for photography and motion<br/>
+  Available for freelance ⟶ cloots.cas@gmail.com </h1>
+      </div>
+    </section>
+    <section class="case">
+      <div class="content">
+        <span>↓ App Redesign ↓</span>
+        <h2><b>MightyHive</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
+        <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
+        </div>
+      </section>
+        <section class="carouselContainer">
+        <div class="carousel" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+          <div class="carousel-cell test"></div>
+          <div class="carousel-cell test2"></div>
+          <div class="carousel-cell test3"></div>
+          <div class="carousel-cell test4"></div>
+          <div class="carousel-cell test5"></div>
+        </div>
+        <div class="gradient-left">
+        </div>
+        <div class="gradient-right">
+        </div>
+    </section>
+    <section class="case">
+      <div class="contentCase">
+        <ul class="caseRoles">
+          <li>PROJECT: MightyHive Website</li>
+          <li>ROLE: UI/UX Designer</li>
+          <li>DEMO: visit website</li>
+        </ul>
+        <p class="caseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat.</p>
+      </div>
+      </section>
+    <footer class="footer">
+      <div className={styles.section}>
+      <section className={styles.footerItem}>
+        <h1>INFO</h1>
+        <p>
+          Cas Cloots is a designer working across digital and graphic design with a passion for photography and motion. <br/><a className={styles.underline} href="https://www.mediamonks.com/">Currently digital designer at MediaMonks</a>
+        </p>
+        <ul>
+          <li>Available for freelance.</li>
+          <li>⟶ <div className={styles.underline}>cloots.cas@gmail.com</div></li>
+          <li>⟶ <div className={styles.underline}>Instagram</div></li>
+          <li>⟶ <div className={styles.underline}>Behance</div></li>
+        </ul>
+      </section>
+      <section className={styles.footerItem}>
+        <h1>CLIENTS</h1>
+        <ul>
+          <li>Sportza</li>
+          <li>RedBull</li>
+          <li>Huawei</li>
+          <li>HP Omen</li>
+          <li>MSK</li>
+          <li>MightyHive</li>
+        </ul>
+        <ul>
+          <li>+ small businesses</li>
+          <li>&amp; individuals</li>
+        </ul>
+      </section>
+      </div>
+      <div>
+      <p>© 2020 cas cloots</p>
+        <p>⟶ cloots.cas@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>

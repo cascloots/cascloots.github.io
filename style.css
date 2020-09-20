@@ -1,0 +1,203 @@
+body {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  cursor: none;
+  background: white;
+  user-select: none;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+a {
+  cursor: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.navigation {
+  list-style: none;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1380px;
+}
+
+.contentCase {
+  max-width: 1380px;
+  display: flex;
+}
+
+.caseRoles {
+  max-width: 640px;
+}
+
+.caseDesc {
+  max-width: 640px;
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 50px;
+  width: 50px;
+  vertical-align: bottom;
+}
+
+.navigationItem:hover {
+  text-transform: uppercase;
+}
+
+.navigationItem a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.cursor {
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  z-index: 1000;
+  font-size: 18px;
+  color: black;
+}
+
+.wrapper {
+  transform: translate(30%, 200%);
+  /* text-align: center; */
+}
+
+.cursor-wrapper {
+  mix-blend-mode: difference;
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  width: 90px;
+  height: 90px;
+  transition-timing-function: ease-out;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.case {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: black;
+  color: #ffffff;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.carouselContainer {
+  /* z-index: -1; */
+  background-color: black;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.carousel {
+  /* z-index: -1; */
+  /* background-color: black; */
+}
+
+.carousel-cell {
+  /* width: 65%;
+  height: 120%; */
+  width: 1280px;
+  height: 855px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.test {
+  background-image: url("case.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.test2 {
+  background-image: url("image 8.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.test3 {
+  background-image: url("image 9.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.test4 {
+  background-image: url("case.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.test5 {
+  background-image: url("image 9.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.gradient-left {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to right, black, transparent 100%);
+  margin-top: -855px;
+  height: 855px;
+  width: 6%;
+  content: "";
+}
+.gradient-right {
+  display: block;
+  position: relative;
+  float: right;
+  right: 0;
+  background-image: linear-gradient(to left, black, transparent 100%);
+  margin-top: -855px;
+  height: 855px;
+  width: 6%;
+  content: "";
+}
