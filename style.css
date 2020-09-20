@@ -123,8 +123,16 @@ b {
   display: flex;
   justify-content: center;
   padding-top: 60px;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.dark {
   background-color: black;
-  color: #ffffff;
+  color: white;
 }
 
 footer {
@@ -134,7 +142,6 @@ footer {
 
 .carouselContainer {
   /* z-index: -1; */
-  background-color: black;
   padding-bottom: 60px;
   padding-top: 60px;
 }

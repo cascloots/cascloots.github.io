@@ -11,9 +11,9 @@
   </head>
   <body>
     <div class="cursor-wrapper">
-    <div class="cursor"><p class="wrapper"></p></div>
+    <div class="cursor"><p class="wrapper" id="cursor">READ</p></div>
     </div>
-    <nav>
+    <nav onmouseenter="read(this)">
       <div class="content">
       <ul class="navigation">
         <li>
@@ -31,21 +31,22 @@
       </ul>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero" onmouseenter="read(this)">
       <div class="content">
         <span>Hi, there</span>
         <h1>Cas Cloots is a designer working across digital and graphic design with a passion for photography and motion<br/>
   Available for freelance ⟶ cloots.cas@gmail.com </h1>
       </div>
     </section>
-    <section class="case">
+    <div onmouseenter="drag(this)">
+    <section class="case dark">
       <div class="content">
         <span>↓ App Redesign ↓</span>
         <h2><b>MightyHive</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
         <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
         </div>
       </section>
-        <section class="carouselContainer">
+        <section class="carouselContainer dark">
         <div class="carousel" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
           <div class="carousel-cell test"></div>
           <div class="carousel-cell test2"></div>
@@ -58,7 +59,7 @@
         <div class="gradient-right">
         </div>
     </section>
-    <section class="case">
+    <section class="case dark">
       <div class="contentCase">
         <ul class="caseRoles">
           <li>PROJECT: MightyHive Website</li>
@@ -68,7 +69,41 @@
         <p class="caseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat.</p>
       </div>
       </section>
-    <footer class="footer">
+    </div>
+    <div onmouseenter="drag(this)">
+      <section class="case white">
+        <div class="content">
+          <span>↓ App Redesign ↓</span>
+          <h2><b>MightyHive</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
+          <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
+          </div>
+        </section>
+          <section class="carouselContainer white">
+          <div class="carousel" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+            <div class="carousel-cell test"></div>
+            <div class="carousel-cell test2"></div>
+            <div class="carousel-cell test3"></div>
+            <div class="carousel-cell test4"></div>
+            <div class="carousel-cell test5"></div>
+          </div>
+          <div class="gradient-left">
+          </div>
+          <div class="gradient-right">
+          </div>
+      </section>
+      <section class="case white">
+        <div class="contentCase">
+          <ul class="caseRoles">
+            <li>PROJECT: MightyHive Website</li>
+            <li>ROLE: UI/UX Designer</li>
+            <li>DEMO: visit website</li>
+          </ul>
+          <p class="caseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat.</p>
+        </div>
+        </section>
+      </div>
+
+    <footer class="footer" onmouseenter="footer(this)">
       <div className={styles.section}>
       <section className={styles.footerItem}>
         <h1>INFO</h1>
@@ -105,5 +140,19 @@
     </footer>
   </body>
   <script type="text/javascript" src="app.js"></script>
+  <script>
+    function drag(x) {
+      document.getElementById("cursor").innerHTML = "DRAG";
+    }
+
+    function read(x) {
+      document.getElementById("cursor").innerHTML = "READ";
+    }
+
+    function footer(x) {
+      document.getElementById("cursor").innerHTML = "CLICK";
+    }
+    </script>
+    
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
