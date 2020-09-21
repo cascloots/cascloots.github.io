@@ -72,11 +72,13 @@ b {
 }
 
 .caseRoles {
-  max-width: 640px;
+  width: 640px;
+  line-height: 180%;
 }
 
 .caseDesc {
-  max-width: 640px;
+  width: 640px;
+  line-height: 180%;
 }
 
 .navigationItem {
