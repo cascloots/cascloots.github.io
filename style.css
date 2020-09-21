@@ -180,29 +180,57 @@ footer {
 }
 
 .test {
-  background-image: url("case.png");
+  background-image: url("vinyl/1.1.png");
   background-size: contain;
   /* background-repeat: no-repeat; */
 }
 
 .test2 {
-  background-image: url("image 8.png");
+  background-image: url("vinyl/1.2.png");
   background-size: contain;
   /* background-repeat: no-repeat; */
 }
 
 .test3 {
-  background-image: url("image 9.png");
+  background-image: url("vinyl/1.3.png");
   background-size: contain;
   /* background-repeat: no-repeat; */
 }
 .test4 {
-  background-image: url("case.png");
+  background-image: url("vinyl/1.4.png");
   background-size: contain;
   /* background-repeat: no-repeat; */
 }
 .test5 {
-  background-image: url("image 9.png");
+  background-image: url("vinyl/1.5.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.test6 {
+  background-image: url("gira/2.1.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.test7 {
+  background-image: url("gira/2.2.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+.test8 {
+  background-image: url("gira/2.3.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.test9 {
+  background-image: url("gira/2.4.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.test10 {
+  background-image: url("gira/2.5.png");
   background-size: contain;
   /* background-repeat: no-repeat; */
 }
