@@ -127,6 +127,7 @@ b {
   animation: cursorAnim3 0.5s forwards;
   width: 90px;
   height: 90px;
+  font-size: 15px;
   transition-timing-function: ease-out;
 }
 
