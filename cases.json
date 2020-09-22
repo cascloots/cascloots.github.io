@@ -1,14 +1,59 @@
 [
   {
     "title": "title",
-    "description": "description"
+    "client": "client",
+    "category": "category",
+    "project": "project",
+    "demo": "demo",
+    "carousel": [
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      }
+    ],
+    "description": "description",
+    "role": "role"
   },
   {
     "title": "title",
-    "description": "description"
+    "client": "client",
+    "category": "category",
+    "project": "project",
+    "demo": "demo",
+    "carousel": [
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      }
+    ],
+    "description": "description",
+    "role": "role"
   },
   {
     "title": "title",
-    "description": "description"
+    "client": "client",
+    "category": "category",
+    "project": "project",
+    "demo": "demo",
+    "carousel": [
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "plantje.png",
+        "alt": "plantje"
+      }
+    ],
+    "description": "description",
+    "role": "role"
   }
 ]
