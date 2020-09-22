@@ -46,10 +46,13 @@ const getElement = ({ id, children }) => {
   }
 }
 
-const element = ({ type, className, content, children }) => {
+const element = ({ type, className, content, src, alt, children }) => {
   const element = document.createElement(type);
   element.classList.add(className);
-  element.innerText = content;
+  
+  if (content) element.innerText = content;
+  if (src) element.src = src;
+  if (alt) element.alt = alt;
 
   if (children && children.length) {
     for (child of children) {
@@ -63,8 +66,16 @@ const element = ({ type, className, content, children }) => {
 const generateCases = cases => cases.map(( item, index ) => {
   getElement({ id: 'cases', children: [
     element({ type: 'div', className: index % 2 ? 'case-odd' : 'case-even', children: [
-      element({ type: 'h1', className: 'case-title', content: item.title }),
-      element({ type: 'p', className: 'case-description', content: item.description })
+      element({ type: 'h3', className: 'case-category', content: `↓ ${item.category} ↓` }),
+      element({ type: 'h1', className: 'case-description', content: `${item.client} - ${item.title}` }),
+      element({ type: 'div', className: 'case-carousel', children: item.carousel.map(image => (
+        element({ type: 'img', className: 'case-img', src: image.src, alt: image.alt })
+      ))}),
+      element({ type: 'ul', className: 'case-categories', children: [
+        element({ type: 'li', className: 'case-project', content: `PROJECT: ${item.project}` }),
+        element({ type: 'li', className: 'case-project', content: `ROLE: ${item.role}` }),
+        element({ type: 'li', className: 'case-project', content: `DEMO: ${item.demo}` })
+      ] })
     ]})
   ]});
 });
