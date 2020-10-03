@@ -1,30 +1,42 @@
 const cursor = document.querySelector('.cursor');
-let navLinks = document.querySelectorAll('.navigation li')
+let navLinks = document.querySelectorAll('.navigation li');
+
+
+// /** Initialize carousel */
+var flkty = new Flickity( (this.$refs.carousel), {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
 
 /** track cursor aand apply style */
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px;")
-})
+// document.addEventListener('mousemove', e => {
+//     cursor.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px;")
+// })
 
 /** animation on click */
-document.addEventListener('mousedown', () => {
-  cursor.classList.add("expand");
-});
+// document.addEventListener('mousedown', () => {
+//   cursor.classList.add("expand");
+// });
 
-document.addEventListener('mouseup', () => {
-  cursor.classList.remove("expand");
-});
+// document.addEventListener('mouseup', () => {
+//   cursor.classList.remove("expand");
+// });
 
-/** change cursor when hovering links */
-navLinks.forEach(link =>{
-  link.addEventListener("mouseleave", () => {
-    document.getElementById("cursor").innerHTML = "READ";
-  });
-  link.addEventListener("mouseover", () => {
-    document.getElementById("cursor").innerHTML = " ";
-  });
-});
+// /** change cursor when hovering links */
+// navLinks.forEach(link =>{
+//   link.addEventListener("mouseleave", () => {
+//     document.getElementById("cursor").innerHTML = "READ";
+//     setTimeout(function(){ cursor.classList.remove("outlineLink") }, 275);
 
+//   });
+//   link.addEventListener("mouseover", () => {
+//     document.getElementById("cursor").innerHTML = " ";
+//     cursor.classList.add("outlineLink")
+//   });
+// });
+
+/** load json data */
 const loadJSON = (file, callback) => {
   const xobj = new XMLHttpRequest();
 
@@ -63,19 +75,21 @@ const element = ({ type, className, content, src, alt, children }) => {
   return element;
 };
 
+/** create elements from json*/
 const generateCases = cases => cases.map(( item, index ) => {
   getElement({ id: 'cases', children: [
     element({ type: 'div', className: index % 2 ? 'case-odd' : 'case-even', children: [
       element({ type: 'h3', className: 'case-category', content: `↓ ${item.category} ↓` }),
-      element({ type: 'h1', className: 'case-description', content: `${item.client} - ${item.title}` }),
-      element({ type: 'div', className: 'case-carousel', children: item.carousel.map(image => (
-        element({ type: 'img', className: 'case-img', src: image.src, alt: image.alt })
+      element({ type: 'h1', className: 'case-title', content: `${item.client} - ${item.title}` }),
+      element({ type: 'div', className: 'carousel', ref: "carousel", children: item.carousel.map(image => (
+        element({ type: 'img', className: 'carousel-cell', src: image.src, alt: image.alt })
       ))}),
-      element({ type: 'ul', className: 'case-categories', children: [
+      element({ type: 'ul', className: 'case-info', children: [
         element({ type: 'li', className: 'case-project', content: `PROJECT: ${item.project}` }),
         element({ type: 'li', className: 'case-project', content: `ROLE: ${item.role}` }),
         element({ type: 'li', className: 'case-project', content: `DEMO: ${item.demo}` })
-      ] })
+      ] }),
+      element({ type: 'p', className: 'case-description', content: `${item.description}` })
     ]})
   ]});
 });

@@ -9,16 +9,15 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script type="text/javascript" src="cases.json"></script>
   </head>
-  <body onload="myFunction(this)">
-    <div class="cursor-wrapper">
-    <div class="cursor"><p class="wrapper" id="cursor">READ</p></div>
+  <body>
     </div>
-    <nav onmouseenter="read(this)">
+    <nav>
       <div class="content">
       <ul class="navigation">
         <li>
-        <Link to="/"><div class="logo"></div></Link>
+        <div class="logo"></div>
         </li>
         <li class="navigationItem">
           <a href="">Home</a>
@@ -32,80 +31,16 @@
       </ul>
       </div>
     </nav>
-    <section class="hero" onmouseenter="read(this)">
+    <section class="hero">
       <div class="content">
         <div class="title">Hi, there</div>
         <h1>Cas Cloots is a designer working across digital and graphic design with a passion for photography and motion<br/>
   Available for freelance ⟶ cloots.cas@gmail.com </h1>
       </div>
     </section>
-    <div onmouseenter="drag(this)">
-    <section class="case dark">
-      <div class="content">
-        <div class="title">↓ Personal Project ↓</div>
-        <h2><b>Vinyl Project</b> —  What does your playlist say about your personality.</h2>
-        <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
-        </div>
-      </section>
-        <section class="carouselContainer dark">
-        <div class="carousel" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-          <div class="carousel-cell test"></div>
-          <div class="carousel-cell test2"></div>
-          <div class="carousel-cell test3"></div>
-          <div class="carousel-cell test4"></div>
-          <div class="carousel-cell test5"></div>
-        </div>
-        <div class="gradient-left">
-        </div>
-        <div class="gradient-right">
-        </div>
+    <section id="cases">
     </section>
-    <section id="cases" />
-    <section class="case dark">
-      <div class="contentCase">
-        <ul class="caseRoles">
-          <li><b>PROJECT:</b> Vinyl Project</li>
-          <li><b>ROLE:</b> Visual Designer</li>
-          <li><b>DEMO:</b> visit behance</li>
-        </ul>
-        <p class="caseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat.</p>
-      </div>
-      </section>
-    </div>
-    <div onmouseenter="drag(this)">
-      <section class="case white">
-        <div class="content">
-          <div class="title">↓ App Redesign ↓</div>
-          <h2><b>Gira</b> —  A one in all solutions for smarthomes in a timeless layout.</h2>
-          <!-- <img src="case.png" alt="thumbnail" width="1280" height="855" /> -->
-          </div>
-        </section>
-          <section class="carouselContainer white">
-          <div class="carousel" data-flickity='{ "value":true, "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-            <div class="carousel-cell test6"></div>
-            <div class="carousel-cell test7"></div>
-            <div class="carousel-cell test8"></div>
-            <div class="carousel-cell test9"></div>
-            <div class="carousel-cell test10"></div>
-          </div>
-          <!-- <div class="gradient-left">
-          </div>
-          <div class="gradient-right">
-          </div> -->
-      </section>
-      <section class="case white">
-        <div class="contentCase">
-          <ul class="caseRoles">
-            <li><b>PROJECT:</b> Smarthome App</li>
-            <li><b>ROLE:</b> UI/UX Designer</li>
-            <li><b>DEMO:</b> visit behance</li>
-          </ul>
-          <p class="caseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat.</p>
-        </div>
-        </section>
-      </div>
-
-    <footer class="footer" onmouseenter="footer(this)">
+    <footer class="footer">
       <div class="footerContent">
       <div class="container">
       <section class="footerItem">
@@ -143,27 +78,6 @@
       </div>
     </footer>
   </body>
-  <script type="text/javascript" src="app.js"></script>
-  <script>
-    function drag(x) {
-      document.getElementById("cursor").innerHTML = "DRAG";
-    }
-
-    function read(x) {
-      document.getElementById("cursor").innerHTML = "READ";
-    }
-
-    function footer(x) {
-      document.getElementById("cursor").innerHTML = "CLICK";
-    }
-
-    // function myFunction(x) {
-    //   $carousel.flickity( 'selectCell', "3" );
-    // }
-    // var $carousel = $('.carousel').flickity({
-    //   groupCells: true
-    // });
-    </script>
-    
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </html>

@@ -1,5 +1,36 @@
 [
   {
+    "category": "Website Design",
+    "title": "Get to know Azure, Turn your ideas into innovation with trusted Azure products and services",
+    "client": "Microsoft",
+    "carousel": [
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      }
+    ],
+    "project": "Introduction website for Microsoft Azure",
+    "role": "UI/UX Designer",
+    "demo": "in development",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat."
+  },
+  {
     "title": "title",
     "client": "client",
     "category": "category",
@@ -7,11 +38,11 @@
     "demo": "demo",
     "carousel": [
       {
-        "src": "plantje.png",
+        "src": "vinyl/1.4.png",
         "alt": "plantje"
       },
       {
-        "src": "plantje.png",
+        "src": "vinyl/1.4.png",
         "alt": "plantje"
       }
     ],
@@ -26,30 +57,11 @@
     "demo": "demo",
     "carousel": [
       {
-        "src": "plantje.png",
+        "src": "vinyl/1.4.png",
         "alt": "plantje"
       },
       {
-        "src": "plantje.png",
-        "alt": "plantje"
-      }
-    ],
-    "description": "description",
-    "role": "role"
-  },
-  {
-    "title": "title",
-    "client": "client",
-    "category": "category",
-    "project": "project",
-    "demo": "demo",
-    "carousel": [
-      {
-        "src": "plantje.png",
-        "alt": "plantje"
-      },
-      {
-        "src": "plantje.png",
+        "src": "vinyl/1.4.png",
         "alt": "plantje"
       }
     ],
