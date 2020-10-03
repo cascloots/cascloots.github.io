@@ -1,14 +1,6 @@
 const cursor = document.querySelector('.cursor');
 let navLinks = document.querySelectorAll('.navigation li');
 
-
-// /** Initialize carousel */
-var flkty = new Flickity( (this.$refs.carousel), {
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-
 /** track cursor aand apply style */
 // document.addEventListener('mousemove', e => {
 //     cursor.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px;")
@@ -81,7 +73,7 @@ const generateCases = cases => cases.map(( item, index ) => {
     element({ type: 'div', className: index % 2 ? 'case-odd' : 'case-even', children: [
       element({ type: 'h3', className: 'case-category', content: `↓ ${item.category} ↓` }),
       element({ type: 'h1', className: 'case-title', content: `${item.client} - ${item.title}` }),
-      element({ type: 'div', className: 'carousel', ref: "carousel", children: item.carousel.map(image => (
+      element({ type: 'div', className: 'main-carousel', children: item.carousel.map(image => (
         element({ type: 'img', className: 'carousel-cell', src: image.src, alt: image.alt })
       ))}),
       element({ type: 'ul', className: 'case-info', children: [

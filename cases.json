@@ -1,11 +1,19 @@
 [
   {
     "category": "Website Design",
-    "title": "Get to know Azure, Turn your ideas into innovation with trusted Azure products and services",
     "client": "Microsoft",
+    "title": "Get to know Azure, Turn your ideas into innovation with trusted Azure products and services",
     "carousel": [
       {
-        "src": "vinyl/1.4.png",
+        "src": "vinyl/1.1.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.2.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.3.png",
         "alt": "plantje"
       },
       {
@@ -13,15 +21,7 @@
         "alt": "plantje"
       },
       {
-        "src": "vinyl/1.4.png",
-        "alt": "plantje"
-      },
-      {
-        "src": "vinyl/1.4.png",
-        "alt": "plantje"
-      },
-      {
-        "src": "vinyl/1.4.png",
+        "src": "vinyl/1.5.png",
         "alt": "plantje"
       }
     ],
@@ -31,41 +31,96 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat."
   },
   {
-    "title": "title",
-    "client": "client",
-    "category": "category",
-    "project": "project",
-    "demo": "demo",
+    "category": "Visual Design",
+    "client": "Personal Project",
+    "title": "Combining a passion for music and design by creating playlist covers with there own unique style",
     "carousel": [
       {
-        "src": "vinyl/1.4.png",
+        "src": "vinyl/1.1.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.2.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.3.png",
         "alt": "plantje"
       },
       {
         "src": "vinyl/1.4.png",
         "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.5.png",
+        "alt": "plantje"
       }
     ],
-    "description": "description",
-    "role": "role"
+    "project": "Discovering new techniques and styles",
+    "role": "Visual Designer",
+    "demo": "spotify profile",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat."
   },
   {
-    "title": "title",
-    "client": "client",
-    "category": "category",
-    "project": "project",
-    "demo": "demo",
+    "category": "App Design",
+    "client": "Ace Hardware",
+    "title": "The world's largest hardware retail cooperative",
     "carousel": [
       {
-        "src": "vinyl/1.4.png",
+        "src": "vinyl/1.1.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.2.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.3.png",
         "alt": "plantje"
       },
       {
         "src": "vinyl/1.4.png",
         "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.5.png",
+        "alt": "plantje"
       }
     ],
-    "description": "description",
-    "role": "role"
+    "project": "Adding new features based on user feedback",
+    "role": "Lead Designer",
+    "demo": "download here",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat."
+  },
+  {
+    "category": "Website Design",
+    "client": "Huawei",
+    "title": "Hisilicon is dedicated to providing comprehensive connectivity and multimedia chipset solutions.",
+    "carousel": [
+      {
+        "src": "vinyl/1.1.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.2.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.3.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.4.png",
+        "alt": "plantje"
+      },
+      {
+        "src": "vinyl/1.5.png",
+        "alt": "plantje"
+      }
+    ],
+    "project": "Creating new digital identity",
+    "role": "UI/UX Designer",
+    "demo": "in development",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo rhoncus ipsum, non tempus tellus egestas vitae. Phasellus elit purus, convallis non eros ac, rhoncus maximus ipsum. Duis odio metus, ultrices sed leo at, lacinia bibendum erat."
   }
 ]
