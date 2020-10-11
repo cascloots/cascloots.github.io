@@ -70,8 +70,8 @@ const element = ({ type, className, content, src, alt, children }) => {
 /** create elements from json*/
 const generateCases = cases => cases.map(( item, index ) => {
   getElement({ id: 'cases', children: [
-    element({ type: 'div', className: index % 2 ? 'case-odd' : 'case-even', children: [
-      element({ type: 'h3', className: 'case-category', content: `↓ ${item.category} ↓` }),
+    element({ type: 'div', className: index % 2 ? 'odd' : 'even', children: [
+      element({ type: 'h2', className: 'case-category', content: `↓ ${item.category} ↓` }),
       element({ type: 'h1', className: 'case-title', content: `${item.client} - ${item.title}` }),
       element({ type: 'div', className: 'main-carousel', children: item.carousel.map(image => (
         element({ type: 'img', className: 'carousel-cell', src: image.src, alt: image.alt })
