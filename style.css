@@ -1,64 +1,66 @@
 html {
-  font-size: 62.5%;
-
-  @include breakpoint(medium) {
-    font-size: 56.25%;
-  }
-
-  @include breakpoint(small) {
-    font-size: 50%;
-  }
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns:
-    1fr
-    min(138ch, 100%)
-    1fr;
+::selection {
+  background: #e5e5e5; /* WebKit/Blink Browsers */
 }
 
-.test {
-  background-color: yellow;
-  grid-row: 1 / 2;
+::-moz-selection {
+  background: #e5e5e5; /* Gecko Browsers */
 }
 
-.wrapper > * {
-  grid-column: 2;
+.title {
+  padding-top: 12rem;
 }
 
-.full-bleed {
-  width: 100%;
-  grid-column: 1 / 4;
+#myBtn {
+  position: fixed;
+  bottom: 0;
+  padding: 60px;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+  mix-blend-mode: difference;
 }
 
-.main-carousel {
-  width: 100%;
-  grid-column: 1 / 4;
+#myBtn:hover {
+  fill: #0066cc;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  line-height: 150%;
+  line-height: 180%;
   margin: 0;
   background: white;
-  user-select: none;
 }
 
 h1 {
-  padding-top: 30px;
-  padding-bottom: 120px;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   font-size: 40px;
+  font-weight: normal;
+  line-height: 130%;
+  width: 66.7vw;
+}
+
+.intro {
+  padding-bottom: 120px;
+  width: 66.7vw;
   font-weight: 500;
   line-height: 150%;
 }
 
 h2 {
-  padding-top: 30px;
-  font-size: 40px;
-  font-weight: 400;
+  padding-top: 6rem;
+  font-size: 18px;
+  font-weight: normal;
   line-height: 150%;
+  width: 66.7vw;
 }
 
 h3 {
@@ -66,12 +68,7 @@ h3 {
   font-weight: 600;
   line-height: 150%;
   color: #4a4a4a;
-}
-
-.case-category {
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 60px;
+  width: 66.7vw;
 }
 
 .logo {
@@ -83,12 +80,13 @@ h3 {
 
 .navigation {
   list-style: none;
-  padding-top: 90px;
-  font-size: 18px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 9rem;
+  font-size: 1.8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   justify-content: center;
+  background-color: red;
 }
 
 .content {
@@ -96,38 +94,54 @@ h3 {
 }
 
 .contentCase {
-  max-width: 1280px;
+  width: 66.7vw;
   display: flex;
-  padding-bottom: 120px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .case-info {
-  width: 640px;
+  display: flex;
+  justify-content: center;
+}
+
+.case-roles {
+  width: 50%;
   line-height: 180%;
+  padding-bottom: 9rem;
+  padding-top: 6rem;
 }
 
 .case-description {
-  width: 640px;
+  width: 50%;
   line-height: 180%;
+  padding-bottom: 9rem;
+  padding-top: 6rem;
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: center;
   margin: 0 50px;
-  width: 50px;
-  vertical-align: bottom;
+}
+
+.navigationItem a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigationItem a:hover {
+  color: #0066cc;
 }
 
 .hero {
   display: flex;
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 120px;
 }
 
-.case {
+.case-header {
   display: flex;
   justify-content: center;
 }
@@ -151,28 +165,28 @@ footer {
   justify-content: center;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
-}
+} */
 
 .footerItem {
   width: 500px;
-}
-
-.carouselContainer {
-  /* z-index: -1; */
-  padding-bottom: 60px;
-  padding-top: 60px;
+  background-color: red;
 }
 
 .carousel-cell {
-  /* width: 65%;
-  height: 120%; */
-  width: 1280px;
-  height: 855px;
-  margin-right: 50px;
-  margin-left: 50px;
+  width: 66.7%;
+  /* width: 1280px;
+  height: 855px; */
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.underline {
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  line-height: 1.2;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
