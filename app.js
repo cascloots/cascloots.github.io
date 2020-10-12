@@ -109,9 +109,9 @@ const generateCases = cases => cases.map(( item, index ) => {
       element({ type: 'div', className: 'case-info', children: [
       element({ type: 'div', className: 'contentCase', children: [
       element({ type: 'ul', className: 'case-roles', children: [
-        element({ type: 'li', className: 'case-project', content: `<b>PROJECT:</b> ${item.project}` }),
-        element({ type: 'li', className: 'case-project', content: `<b>ROLE:</b> ${item.role}` }),
-        element({ type: 'li', className: 'case-project', content: `<b>DEMO:</b> ${item.demo}` })
+        element({ type: 'li', className: 'case-project', content: `PROJECT: ${item.project}` }),
+        element({ type: 'li', className: 'case-project', content: `ROLE: ${item.role}` }),
+        element({ type: 'li', className: 'case-project', content: `DEMO: ${item.demo}` })
       ] }),
       element({ type: 'p', className: 'case-description', content: `${item.description}` })
     ] }),

@@ -46,7 +46,6 @@ h1 {
   font-weight: normal;
   line-height: 130%;
   width: 66.7vw;
-  background-color: seagreen;
 }
 
 .intro {
@@ -62,15 +61,14 @@ h2 {
   font-weight: normal;
   line-height: 150%;
   width: 66.7vw;
-  background-color: slateblue;
 }
 
 h3 {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
+  padding-bottom: 5rem;
   color: #4a4a4a;
-  width: 66.7vw;
 }
 
 .logo {
@@ -87,14 +85,12 @@ h3 {
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
-  background-color: salmon;
 }
 
 .navigationContent {
   width: 66.7vw;
   display: flex;
   justify-content: space-between;
-  background-color: slateblue;
 }
 
 .content {
@@ -159,22 +155,26 @@ h3 {
 }
 
 footer {
-  padding-top: 90px;
-  padding-bottom: 70px;
-  background-color: black;
+  padding-top: 9rem;
+  padding-bottom: 6rem;
   color: white;
+  background-color: black;
   display: flex;
   justify-content: center;
+  line-height: 150%;
 }
 
-/* .container {
+.footerContent {
   display: flex;
-  justify-content: center;
-} */
+}
 
 .footerItem {
-  width: 500px;
-  background-color: red;
+  width: 35%;
+  margin-right: 20rem;
+}
+
+.footerItem p {
+  padding-bottom: 3rem;
 }
 
 .carousel-cell {
@@ -189,14 +189,37 @@ footer {
   border-bottom: 1px solid currentColor;
   display: inline-block;
   line-height: 1.2;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.underline:hover {
+  color: #0066cc;
+  transition: all 0.2s ease;
+}
+
+.credits {
+  padding-top: 6rem;
+  display: flex;
+  color: #9b9b9b;
+}
+
+.credits p {
+  width: 35%;
+  margin-right: 20rem;
+}
+
+.test {
+  padding-top: 3rem;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   h1 {
     font-size: 22px;
-    padding-top: 15px;
-    padding-bottom: 60px;
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
     line-height: 150%;
   }
 }
