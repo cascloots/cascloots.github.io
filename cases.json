@@ -28,7 +28,8 @@
     "project": "Introduction website for Microsoft Azure",
     "role": "UI/UX Designer",
     "demo": "in development",
-    "description": "Not only we cleaned the information presented to users, but we created a reason for users to come back to the app by featuring popular content that they could buy right from the home page. We also highlighted blog posts about their process, humanizing the brand and making it relatable."
+    "year": "2020",
+    "description": "Creating a ban with the consumer and the product by better understanding the different products and how they work. Translating designs to different screen zise."
   },
   {
     "category": "Visual Design",
@@ -59,12 +60,13 @@
     "project": "Discovering new techniques and styles",
     "role": "Visual Designer",
     "demo": "spotify profile",
-    "description": "Not only we cleaned the information presented to users, but we created a reason for users to come back to the app by featuring popular content that they could buy right from the home page. We also highlighted blog posts about their process, humanizing the brand and making it relatable."
+    "year": "Present",
+    "description": "Music says a lot of a person and a plylist even more what kind of music do you listen to. to grow designing everyday combining something you love seems a lot easier. new styles and trends trying them out and figuring them out. combining of digital and tactical technieks. keep pushing ur own boundries."
   },
   {
     "category": "App Design",
     "client": "Ace Hardware",
-    "title": "The world's largest hardware retail cooperative",
+    "title": "The world's largest hardware retail cooperative translated in a seamless mobile experience",
     "carousel": [
       {
         "src": "ace/1.1.png",
@@ -90,11 +92,13 @@
     "project": "Adding new features based on user feedback",
     "role": "Lead Designer",
     "demo": "download here",
-    "description": "Not only we cleaned the information presented to users, but we created a reason for users to come back to the app by featuring popular content that they could buy right from the home page. We also highlighted blog posts about their process, humanizing the brand and making it relatable."
+    "year": "2020",
+    "description": "Ace rewards member ace hardware store 1000 stores online earning points and rewards. Coupons schopping integration more online business storing of giftcards, mobile and website alignment of campaigns ace reward member and premier members categories coupon categories en clean overview."
   },
   {
     "category": "Website Design",
     "client": "Huawei",
+    "year": "2020",
     "title": "Hisilicon is dedicated to providing comprehensive connectivity and multimedia chipset solutions.",
     "carousel": [
       {
@@ -121,6 +125,7 @@
     "project": "Creating new digital identity",
     "role": "UI/UX Designer",
     "demo": "in development",
-    "description": "Not only we cleaned the information presented to users, but we created a reason for users to come back to the app by featuring popular content that they could buy right from the home page. We also highlighted blog posts about their process, humanizing the brand and making it relatable."
+    "year": "2020",
+    "description": "Huawei buying highsilicon intergrating of company creating own styling that connects to huawei style. dev support creating components from design en page combination creating in chinese first release there dev reviews for design descriptations dev handoff documenting component library."
   }
 ]
