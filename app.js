@@ -94,37 +94,73 @@ const element = ({ type, className, content, src, alt, children }) => {
 };
 
 /** create elements from json*/
-const generateCases = cases => cases.map(( item, index ) => {
-  getElement({ id: 'cases', children: [
-    element({ type: 'div', className: index % 2 ? 'odd' : 'even', children: [
-      element({ type: 'div', className: 'case-header', children: [
-        element({ type: 'div', className: 'content', children: [
-        element({ type: 'h2', className: 'case-category', content: `↓ ${item.category} ↓` }),
-        element({ type: 'h1', className: 'case-title', children: [
-        element({ type: 'span', className: 'case-client', content: `${item.client} - ` }),
-        element({ type: 'span', content: `${item.title}` }),
-        ] }),
-        ] }),
-      ] }),
-      element({ type: 'div', className: 'main-carousel', children: item.carousel.map(image => (
-        element({ type: 'img', className: 'carousel-cell', src: image.src, alt: image.alt })
-      ))}),
-      element({ type: 'div', className: 'case-info', children: [
-      element({ type: 'div', className: 'contentCase', children: [
-      element({ type: 'ul', className: 'case-roles', children: [
-        element({ type: 'li', className: 'case-project', content: `${item.project}` }),
-        element({ type: 'li', className: 'case-role', content: `${item.role}` }),
-        element({ type: 'li', className: 'case-demo', content: `${item.demo}` })
-      ] }),
-      element({ type: 'p', className: 'case-description', children: [
-      element({ type: 'span', className: 'case-year', content: `${item.year} - ` }),
-      element({ type: 'span', content: `${item.description}` })
-    ] }),
-    ] }),
-    ] }),
-    ]})
-  ]});
-});
+const generateCases = cases => {
+  cases.map((item, index) => {
+    getElement({
+      id: 'cases', children: [
+        element({
+          type: 'div', className: index % 2 ? 'odd' : 'even', children: [
+            element({
+              type: 'div', className: 'case-header', children: [
+                element({
+                  type: 'div', className: 'content', children: [
+                    element({ type: 'h2', className: 'case-category', content: `↓ ${item.category} ↓` }),
+                    element({ type: 'h1', className: 'case-title', content: `${item.client} - ${item.title}` }),
+                  ]
+                }),
+              ]
+            }),
+            element({
+              type: 'div', className: 'main-carousel', children: item.carousel.map(image => (
+                element({ type: 'img', className: 'carousel-cell', src: image.src, alt: image.alt })
+              ))
+            }),
+            element({
+              type: 'div', className: 'case-info', children: [
+                element({
+                  type: 'div', className: 'contentCase', children: [
+                    element({
+                      type: 'ul', className: 'case-roles', children: [
+                        element({ type: 'li', className: 'case-project', content: `PROJECT: ${item.project}` }),
+                        element({ type: 'li', className: 'case-project', content: `ROLE: ${item.role}` }),
+                        element({ type: 'li', className: 'case-project', content: `DEMO: ${item.demo}` })
+                      ]
+                    }),
+                    element({ type: 'p', className: 'case-description', content: `${item.description}` })
+                  ]
+                }),
+              ]
+            }),
+          ]
+        })
+      ]
+    });
+  });
+
+  // The generateCases function gets called when cases.json is loaded. Moved Flickity initiation to this function so it only gets called when the json is loaded.
+
+  const elem = document.querySelectorAll('.main-carousel');
+
+  elem.forEach(elem => {
+    const flickity = new Flickity(elem, {
+      // options
+      lazyload: 1,
+      value: true,
+      freeScroll: false,
+      contain: true,
+      prevNextButtons: false,
+      pageDots: false,
+      wrapAround: true
+    });
+
+    // Manually dispatch a resize event to fix an invisible flickity slider bug.
+
+    const el = document;
+    const event = document.createEvent('HTMLEvents');
+    event.initEvent('resize', true, false);
+    el.dispatchEvent(event);
+  });
+}
 
 loadJSON('cases.json', generateCases);
 
