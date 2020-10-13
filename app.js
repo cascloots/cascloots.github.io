@@ -105,7 +105,12 @@ const generateCases = cases => {
                 element({
                   type: 'div', className: 'content', children: [
                     element({ type: 'h2', className: 'case-category', content: `↓ ${item.category} ↓` }),
-                    element({ type: 'h1', className: 'case-title', content: `${item.client} - ${item.title}` }),
+                    element({
+                      type: 'h1', className: 'case-title', children: [
+                    element({ type: 'span', className: 'case-client', content: `${item.client} - ` }),
+                    element({ type: 'span', content: `${item.title}` }),
+                  ]
+                }),
                   ]
                 }),
               ]
@@ -121,12 +126,17 @@ const generateCases = cases => {
                   type: 'div', className: 'contentCase', children: [
                     element({
                       type: 'ul', className: 'case-roles', children: [
-                        element({ type: 'li', className: 'case-project', content: `PROJECT: ${item.project}` }),
-                        element({ type: 'li', className: 'case-project', content: `ROLE: ${item.role}` }),
-                        element({ type: 'li', className: 'case-project', content: `DEMO: ${item.demo}` })
+                        element({ type: 'li', className: 'case-project', content: `${item.project}` }),
+                        element({ type: 'li', className: 'case-role', content: `${item.role}` }),
+                        element({ type: 'li', className: 'case-demo', content: `${item.demo}` })
                       ]
                     }),
-                    element({ type: 'p', className: 'case-description', content: `${item.description}` })
+                    element({
+                      type: 'p', className: 'case-description', children: [
+                    element({ type: 'span', className: 'case-year', content: `${item.year} - ` }),
+                    element({ type: 'span', content: `${item.description}` })
+                  ]
+                }),
                   ]
                 }),
               ]

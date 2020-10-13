@@ -27,10 +27,6 @@ html {
   mix-blend-mode: difference;
 }
 
-#myBtn:hover {
-  fill: #0066cc;
-}
-
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
@@ -53,6 +49,11 @@ h1 {
   width: 66.7vw;
   font-weight: 500;
   line-height: 150%;
+}
+
+.intro a {
+  color: black;
+  text-decoration: none;
 }
 
 .case-client {
@@ -231,6 +232,11 @@ footer {
 .credits p {
   width: 35%;
   margin-right: 20rem;
+}
+
+.credits a {
+  color: #9b9b9b;
+  text-decoration: none;
 }
 
 .list {
