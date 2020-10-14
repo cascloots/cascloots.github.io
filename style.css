@@ -51,9 +51,18 @@ h1 {
   line-height: 150%;
 }
 
-.intro a {
-  color: black;
+a {
+  color: currentColor;
   text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .case-client {
@@ -232,11 +241,6 @@ footer {
 .credits p {
   width: 35%;
   margin-right: 20rem;
-}
-
-.credits a {
-  color: #9b9b9b;
-  text-decoration: none;
 }
 
 .list {
