@@ -133,8 +133,13 @@ const generateCases = cases => {
                     }),
                     element({
                       type: 'p', className: 'case-description', children: [
-                    element({ type: 'span', className: 'case-year', content: `${item.year} - ` }),
-                    element({ type: 'span', content: `${item.description}` })
+                      element({
+                          type: 'p', className: 'case-intro', children: [
+                      element({ type: 'span', className: 'case-year', content: `${item.year} - ` }),
+                      element({ type: 'span', content: `${item.description_intro}` }),
+                    ]
+                  }),
+                    element({ type: 'p', content: `${item.description_work}` })
                   ]
                 }),
                   ]

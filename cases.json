@@ -29,7 +29,8 @@
     "role": "UI/UX Designer",
     "demo": "in development",
     "year": "2020",
-    "description": "Phasellus quis elit ac nunc pretium congue in ornare augue. In bibendum bibendum mauris vel molestie. Suspendisse potenti. Mauris pellentesque eleifend nibh, at molestie massa tincidunt sed. Proin porttitor blandit libero non semper. In id tempor tellus. Nam ac ligula nisl. Donec vel tristique eros. Vivamus vel lobortis metus."
+    "description_intro": "The overarching goal of the platform was to craft a comprehensive experience that clarifies Azure's infrastructure and USP's, to build trust with existing and new customers.",
+    "description_work": "The creative concept was to create an inspiring content hub to explore and have users seamlessly guided to their best solution. To maintain the best user experience I had to make the design accommodate different scenarios while maintaining the overall aesthetic."
   },
   {
     "category": "App Design",
@@ -93,7 +94,8 @@
     "role": "UI/UX Designer",
     "demo": "in development",
     "year": "2020",
-    "description": "Phasellus quis elit ac nunc pretium congue in ornare augue. In bibendum bibendum mauris vel molestie. Suspendisse potenti. Mauris pellentesque eleifend nibh, at molestie massa tincidunt sed. Proin porttitor blandit libero non semper. In id tempor tellus. Nam ac ligula nisl. Donec vel tristique eros. Vivamus vel lobortis metus."
+    "description_intro": "Our objective was to rethink the current site’s UX and design structure and improve its appearance and value. The main pillars we focused on is boost brand awareness, generate new and quality leads and engagement on products and services.",
+    "description_work": "In this project I translated the new visual identity to be accessible on various screen sizes. Splitting up the different breakpoints in components and their variations. Documenting everything to create a clear overview of the project and smooth developer handoff. Following up on the implementation and address design indescrepencies. "
   },
   {
     "category": "Visual Design",
