@@ -28,7 +28,7 @@ let navLinks = document.querySelectorAll('.navigation li');
 //   });
 // });
 
-var message = "👉 Come back we miss you";
+var message = "Come back we miss you  👈";
 var original = document.title;
 
 window.onblur = function () { document.title = message; }

@@ -19,10 +19,6 @@
       {
         "src": "azure/1.4.png",
         "alt": "plantje"
-      },
-      {
-        "src": "azure/1.5.png",
-        "alt": "plantje"
       }
     ],
     "project": "Interactive introduction for Microsoft Azure",
@@ -52,17 +48,14 @@
       {
         "src": "ace/1.4.png",
         "alt": "plantje"
-      },
-      {
-        "src": "ace/1.5.png",
-        "alt": "plantje"
       }
     ],
-    "project": "Creating and implementing new features",
+    "project": "Creating new features based on user feedback",
     "role": "Lead Designer",
     "demo": "download here",
     "year": "2020",
-    "description": "Phasellus quis elit ac nunc pretium congue in ornare augue. In bibendum bibendum mauris vel molestie. Suspendisse potenti. Mauris pellentesque eleifend nibh, at molestie massa tincidunt sed. Proin porttitor blandit libero non semper. In id tempor tellus. Nam ac ligula nisl. Donec vel tristique eros. Vivamus vel lobortis metus."
+    "description_intro": "With already an established client base we got the task to carry the ace success over to the app. We had to combine convenient and easy e-commerce by celebrating brands, products and rewarding users with a more modern loyalty integration.",
+    "description_work": ""
   },
   {
     "category": "Web Design",
@@ -83,10 +76,6 @@
       },
       {
         "src": "highsilicon/1.4.png",
-        "alt": "plantje"
-      },
-      {
-        "src": "highsilicon/1.5.png",
         "alt": "plantje"
       }
     ],
