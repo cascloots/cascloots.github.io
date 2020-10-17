@@ -28,7 +28,7 @@ let navLinks = document.querySelectorAll('.navigation li');
 //   });
 // });
 
-var message = "Come back we miss you  👈";
+var message = "Come back we miss you 👈";
 var original = document.title;
 
 window.onblur = function () { document.title = message; }
@@ -76,14 +76,18 @@ const getElement = ({ id, children }) => {
   }
 }
 
-const element = ({ type, className, content, src, alt, children }) => {
+const element = ({ type, className, content, src, href, alt, children }) => {
   const element = document.createElement(type);
   element.classList.add(className);
   
   if (content) element.innerText = content;
   if (src) element.src = src;
   if (alt) element.alt = alt;
-
+  if (href) {
+    element.href = href;
+    element.target="_blank";
+    element.rel="noopener nofollow";
+  }
   if (children && children.length) {
     for (child of children) {
       element.appendChild(child);
@@ -128,7 +132,11 @@ const generateCases = cases => {
                       type: 'ul', className: 'case-roles', children: [
                         element({ type: 'li', className: 'case-project', content: `${item.project}` }),
                         element({ type: 'li', className: 'case-role', content: `${item.role}` }),
-                        element({ type: 'li', className: 'case-demo', content: `${item.demo}` })
+                        element({
+                          type: 'li', className: 'case-demo', children: [
+                        element({ type: 'a', className: 'underline', href: `${item.demo.link}`, content: `${item.demo.text}` })
+                      ]
+                    }),
                       ]
                     }),
                     element({

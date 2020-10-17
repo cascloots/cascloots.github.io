@@ -231,7 +231,7 @@ footer {
   border-bottom: 1px solid currentColor;
   display: inline-block;
   line-height: 1.2;
-  color: white;
+  color: currentColor;
   text-decoration: none;
   transition: all 0.2s ease;
 }
