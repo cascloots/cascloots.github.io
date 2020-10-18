@@ -4,6 +4,12 @@ html {
   overflow-x: hidden;
 }
 
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 ::selection {
   background: #e5e5e5; /* WebKit/Blink Browsers */
 }
@@ -38,7 +44,7 @@ body {
 h1 {
   padding-top: 3rem;
   padding-bottom: 6rem;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: normal;
   line-height: 130%;
   width: 66.7vw;
@@ -75,14 +81,14 @@ a:focus {
 
 h2 {
   padding-top: 6rem;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: normal;
   line-height: 150%;
   width: 66.7vw;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 150%;
   padding-bottom: 5rem;
@@ -254,7 +260,7 @@ footer {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   h1 {
-    font-size: 22px;
+    font-size: 2.2rem;
     padding-top: 1.5rem;
     padding-bottom: 6rem;
     line-height: 150%;
