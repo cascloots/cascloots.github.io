@@ -45,7 +45,7 @@
         "alt": "plantje"
       },
       {
-        "src": "ace/1.3.png",
+        "src": "ace/1.3.gif",
         "alt": "plantje"
       },
       {
@@ -60,8 +60,8 @@
       "link": "https://apps.apple.com/us/app/ace-hardware/id1495294584"
     },
     "year": "2020",
-    "description_intro": "With already an established client base we got the task to carry the ace success over to the app. We had to combine convenient and easy e-commerce by celebrating brands, products and rewarding users with a more modern loyalty integration.",
-    "description_work": ""
+    "description_intro": "With already an established client base, we got the task to carry the ace success over to the app. We had to combine convenience and easy e-commerce by celebrating brands, products and rewarding users with a more modern loyalty integration.",
+    "description_work": "During this project I had the chance to work closely with the people at ace, regularly present the latest designs, solutions and implementing feedback. Overseeing dev implementation and time planning."
   },
   {
     "category": "Web Design",
@@ -93,7 +93,7 @@
     },
     "year": "2020",
     "description_intro": "Our objective was to rethink the current site’s UX and design structure and improve its appearance and value. The main pillars we focused on is boost brand awareness, generate new and quality leads and engagement on products and services.",
-    "description_work": "In this project I translated the new visual identity to be accessible on various screen sizes. Splitting up the different breakpoints in components and their variations. Documenting everything to create a clear overview of the project and smooth developer handoff. Following up on the implementation and address design indescrepencies. "
+    "description_work": "In this project I translated the new visual identity to be accessible on various screen sizes. Splitting up the different breakpoints in components and their variations. Documenting everything to create a clear overview of the project and smooth developer handoff. Following up on the implementation and address design discrepancies. "
   },
   {
     "category": "Visual Design",
@@ -128,6 +128,7 @@
       "link": "https://open.spotify.com/user/118601586?si=GemCeBD3TjWqYClVVEOZzQ"
     },
     "year": "Present",
-    "description": "Phasellus quis elit ac nunc pretium congue in ornare augue. In bibendum bibendum mauris vel molestie. Suspendisse potenti. Mauris pellentesque eleifend nibh, at molestie massa tincidunt sed. Proin porttitor blandit libero non semper. In id tempor tellus. Nam ac ligula nisl. Donec vel tristique eros. Vivamus vel lobortis metus."
+    "description_intro": "Design trends are constantly changing. Being able to keep up with it and implement them is an important talent to have and sometimes hard to maintain. That's why I study and dissect them in order to improve my own skills and implement in future projects.",
+    "description_work": "I’m constantly curious, investigating what makes other designers good, visit museums, collect things that inspire me and recreating styles and trends."
   }
 ]
